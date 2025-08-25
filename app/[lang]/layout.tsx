@@ -7,6 +7,7 @@ import { allMessages } from "@/lib/i18n";
 export const metadata: Metadata = {
   title: "Lingui POC",
   description: "Proof of concept for Lingui with Next.js",
+  icons: { icon: "/lingui-logo.svg" },
 };
 
 export default async function RootLayout({
@@ -14,9 +15,10 @@ export default async function RootLayout({
   params,
 }: Readonly<{
   children: React.ReactNode;
-  params: Promise<{ lang: "en" | "ar" }>;
+  params: Promise<{ lang: "en" | "tr" }>;
 }>) {
   const { lang } = await params;
+
   initLingui(lang);
 
   return (
