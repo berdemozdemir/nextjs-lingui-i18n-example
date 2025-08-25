@@ -23,7 +23,7 @@ export default async function RootLayout({
 
   return (
     <html lang={lang}>
-      <body>
+      <body className="h-screen w-full bg-gradient-to-b from-purple-50 to-pink-50">
         <LinguiClientProvider
           initialLocale={lang}
           initialMessages={allMessages[lang]!}
