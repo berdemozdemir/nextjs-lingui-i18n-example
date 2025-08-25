@@ -1,7 +1,9 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  experimental: {
+    swcPlugins: [["@lingui/swc-plugin", {}]],
+  },
 };
 
 export default nextConfig;
