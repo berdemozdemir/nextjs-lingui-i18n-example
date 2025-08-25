@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import "./globals.css";
+import "../globals.css";
 import { initLingui } from "@/lib/initLingui";
 import { LinguiClientProvider } from "@/components/LinguiClientProvider";
 import { allMessages } from "@/lib/i18n";
