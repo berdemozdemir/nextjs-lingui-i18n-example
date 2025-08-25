@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "lingui:extract": "lingui extract --clean",
+    "longui:compile": "lingui compile"
   },
   "dependencies": {
     "@lingui/core": "^5.4.1",
