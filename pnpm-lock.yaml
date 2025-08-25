@@ -36,6 +36,9 @@ importers:
       '@lingui/cli':
         specifier: ^5.4.1
         version: 5.4.1(typescript@5.9.2)
+      '@lingui/conf':
+        specifier: ^5.4.1
+        version: 5.4.1(typescript@5.9.2)
       '@lingui/loader':
         specifier: ^5.4.1
         version: 5.4.1(typescript@5.9.2)(webpack@5.101.3)
