@@ -1,13 +1,14 @@
-import type { Metadata } from "next";
-import "../globals.css";
-import { initLingui } from "@/lib/initLingui";
-import { LinguiClientProvider } from "@/components/LinguiClientProvider";
-import { allMessages } from "@/lib/i18n";
+import type { Metadata } from 'next';
+import '../globals.css';
+import { initLingui } from '@/lib/initLingui';
+import { LinguiClientProvider } from '@/components/LinguiClientProvider';
+import { allMessages } from '@/lib/i18n';
+import { LanguageSelector } from '@/components/LangSelector';
 
 export const metadata: Metadata = {
-  title: "Lingui POC",
-  description: "Proof of concept for Lingui with Next.js",
-  icons: { icon: "/lingui-logo.svg" },
+  title: 'Lingui POC',
+  description: 'Proof of concept for Lingui with Next.js',
+  icons: { icon: '/lingui-logo.svg' },
 };
 
 export default async function RootLayout({
@@ -15,7 +16,7 @@ export default async function RootLayout({
   params,
 }: Readonly<{
   children: React.ReactNode;
-  params: Promise<{ lang: "en" | "tr" }>;
+  params: Promise<{ lang: 'en' | 'tr' }>;
 }>) {
   const { lang } = await params;
 
@@ -28,6 +29,8 @@ export default async function RootLayout({
           initialLocale={lang}
           initialMessages={allMessages[lang]!}
         >
+          <LanguageSelector currentLang={lang} />
+
           {children}
         </LinguiClientProvider>
       </body>

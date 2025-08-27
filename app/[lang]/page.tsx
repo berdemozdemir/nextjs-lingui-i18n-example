@@ -1,12 +1,13 @@
 'use client';
 
+import { Container } from '@/components/Container';
 import { LinkCard } from '@/components/LinkCard';
 import { Trans } from '@lingui/react/macro';
 
 export default function Home() {
   return (
     <div className="flex h-full flex-col items-center justify-center">
-      <div className="flex h-fit flex-col gap-4 rounded-2xl bg-white px-10 py-16 shadow-xl">
+      <Container>
         <LinkCard href="/server-example">
           <Trans>Server Example</Trans>
         </LinkCard>
@@ -15,14 +16,10 @@ export default function Home() {
           <Trans>Client Example</Trans>
         </LinkCard>
 
-        <LinkCard href="/form-example">
-          <Trans>Form Example</Trans>
-        </LinkCard>
-
-        <LinkCard href="/icu-examples">
+        <LinkCard href="/icu-example">
           <Trans>ICU Examples</Trans>
         </LinkCard>
-      </div>
+      </Container>
     </div>
   );
 }
