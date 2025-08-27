@@ -1,5 +1,5 @@
-import { setI18n } from "@lingui/react/server";
-import { getI18nInstance } from "./i18n";
+import { setI18n } from '@lingui/react/server';
+import { getI18nInstance } from './i18n';
 
 export type PageLangParam = {
   params: Promise<{ lang: string }>;

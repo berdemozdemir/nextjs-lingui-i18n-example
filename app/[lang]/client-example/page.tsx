@@ -1,25 +1,25 @@
+'use client';
+
 import { Container } from '@/components/Container';
-import { initLingui } from '@/lib/initLingui';
 import { Trans } from '@lingui/react/macro';
-import { setI18n } from '@lingui/react/server';
 
-export default function Page({ params }: { params: { lang: string } }) {
-  const i18nInstance = initLingui(params.lang);
-
-  setI18n(i18nInstance);
-
+export default function Page() {
   return (
     <div className="flex min-h-screen items-center justify-center">
       <Container showHomeButton>
         <h1 className="text-xl font-semibold tracking-tight text-gray-800 sm:text-2xl">
-          <Trans context="heading" comment="main heading of page">
-            Server side translated title
+          <Trans
+            id="client.title"
+            context="heading"
+            comment="main heading of page"
+          >
+            Client side translated title
           </Trans>
         </h1>
 
         <p className="mb-4 text-sm text-gray-600">
           <Trans
-            id="server.description"
+            id="example.description"
             context="heading"
             comment="main heading of page"
           >
@@ -30,11 +30,11 @@ export default function Page({ params }: { params: { lang: string } }) {
         <div className="inline-flex items-center gap-2 rounded-full border border-black/5 bg-white/60 px-3 py-1 text-xs text-gray-600">
           <span className="size-1.5 rounded-full bg-emerald-400"></span>
           <Trans
-            id="server.subtitle"
+            id="client.subtitle"
             context="heading"
             comment="main subtitle of page"
           >
-            Server rendered
+            Client rendered
           </Trans>
         </div>
       </Container>
