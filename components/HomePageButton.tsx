@@ -1,3 +1,5 @@
+'use client';
+
 import { Trans } from '@lingui/react/macro';
 import { ArrowLeft } from 'lucide-react';
 import Link from 'next/link';
