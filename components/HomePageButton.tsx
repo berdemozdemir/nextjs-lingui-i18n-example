@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 export const HomePageButton = () => (
   <Link
-    href="/"
+    href=".."
     className="absolute -top-5 left-0 flex items-center gap-1 text-xs text-gray-500 hover:underline"
   >
     <ArrowLeft size={14} />
