@@ -1,9 +1,12 @@
 import type { Metadata } from 'next';
 import '../globals.css';
-import { initLingui } from '@/lib/initLingui';
+// import { initLingui } from '@/lib/initLingui';
 import { LinguiClientProvider } from '@/components/LinguiClientProvider';
-import { allMessages } from '@/lib/i18n';
+import { allMessages, getI18nInstance } from '@/lib/i18n';
 import { LanguageSelector } from '@/components/LangSelector';
+import { setI18n } from '@lingui/react/server';
+import { ReactNode, use } from 'react';
+import { AvailableLocale } from '@/lib/common';
 
 export const metadata: Metadata = {
   title: 'Lingui POC',
@@ -11,28 +14,35 @@ export const metadata: Metadata = {
   icons: { icon: '/lingui-logo.svg' },
 };
 
-export default async function RootLayout({
-  children,
-  params,
-}: Readonly<{
-  children: React.ReactNode;
-  params: Promise<{ lang: 'en' | 'tr' }>;
-}>) {
-  const { lang } = await params;
+type Props = {
+  params: Promise<{
+    lang: AvailableLocale;
+  }>;
+  children: ReactNode;
+};
 
-  initLingui(lang);
+export default function RootLayout({ children, params }: Props) {
+  // initLingui(lang);
+
+  const { lang } = use(params);
+
+  const i18n = getI18nInstance(lang);
+
+  setI18n(i18n);
 
   return (
     <html lang={lang}>
       <body className="h-screen w-full bg-gradient-to-b from-purple-50 to-pink-50">
-        <LinguiClientProvider
-          initialLocale={lang}
-          initialMessages={allMessages[lang]!}
-        >
-          <LanguageSelector currentLang={lang} />
+        <div className="relative mx-auto max-w-6xl">
+          <LinguiClientProvider
+            initialLocale={lang}
+            initialMessages={allMessages[lang]!}
+          >
+            <LanguageSelector currentLang={lang} />
 
-          {children}
-        </LinguiClientProvider>
+            {children}
+          </LinguiClientProvider>
+        </div>
       </body>
     </html>
   );
