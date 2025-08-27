@@ -6,7 +6,6 @@ import { allMessages, getI18nInstance } from '@/lib/i18n';
 import { LanguageSelector } from '@/components/LangSelector';
 import { setI18n } from '@lingui/react/server';
 import { ReactNode, use } from 'react';
-import { AvailableLocale } from '@/lib/common';
 
 export const metadata: Metadata = {
   title: 'Lingui POC',
@@ -16,7 +15,7 @@ export const metadata: Metadata = {
 
 type Props = {
   params: Promise<{
-    lang: AvailableLocale;
+    lang: string;
   }>;
   children: ReactNode;
 };
@@ -38,7 +37,7 @@ export default function RootLayout({ children, params }: Props) {
             initialLocale={lang}
             initialMessages={allMessages[lang]!}
           >
-            <LanguageSelector currentLang={lang} />
+            <LanguageSelector currentLang="en" />
 
             {children}
           </LinguiClientProvider>

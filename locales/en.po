@@ -6,7 +6,106 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: @lingui/cli\n"
 "Language: en\n"
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Plural-Forms: \n"
 
-#: app/[lang]/page.tsx:6
-msgid "Hello World"
-msgstr "Hello World"
+#: app/[lang]/icu-example/page.tsx:55
+msgid "{count, plural, =0 {No items} =1 {# item} other {# items}}"
+msgstr "{count, plural, =0 {No items} =1 {# item} other {# items}}"
+
+#: app/[lang]/icu-example/page.tsx:94
+msgid "{gender, select, male {He replied} female {She replied} other {They replied}}"
+msgstr "{gender, select, male {He replied} female {She replied} other {They replied}}"
+
+#: app/[lang]/icu-example/page.tsx:71
+msgid "{rank, selectordinal, =0 {No rank} one {#st} two {#nd} few {#rd} other {#th}}"
+msgstr "{rank, selectordinal, =0 {No rank} one {#st} two {#nd} few {#rd} other {#th}}"
+
+#: app/[lang]/icu-example/page.tsx:32
+msgid "Across different cultures, things like count of objects, numbers (i.e. money), gender, and dates can cause a sentence structure to change in a unique way to that language."
+msgstr "Across different cultures, things like count of objects, numbers (i.e. money), gender, and dates can cause a sentence structure to change in a unique way to that language."
+
+#: app/[lang]/icu-example/page.tsx:40
+msgid "Additionally, you may have a dynamic value used in your localization, which would need to be handled differently based on different languages' grammar, etc."
+msgstr "Additionally, you may have a dynamic value used in your localization, which would need to be handled differently based on different languages' grammar, etc."
+
+#: app/[lang]/page.tsx:16
+msgid "Client Example"
+msgstr "Client Example"
+
+#. main subtitle of page
+#. js-lingui-explicit-id
+#: app/[lang]/client-example/page.tsx:31
+msgctxt "heading"
+msgid "client.subtitle"
+msgstr "Client rendered"
+
+#. main heading of page
+#. js-lingui-explicit-id
+#: app/[lang]/client-example/page.tsx:10
+msgctxt "heading"
+msgid "client.title"
+msgstr "Client side translated title"
+
+#: app/[lang]/icu-example/page.tsx:50
+msgid "Count Examples"
+msgstr "Count Examples"
+
+#: app/[lang]/icu-example/page.tsx:117
+msgid "female"
+msgstr "female"
+
+#: app/[lang]/page.tsx:20
+msgid "ICU Examples"
+msgstr "ICU Examples"
+
+#. main heading of page
+#. js-lingui-explicit-id
+#: app/[lang]/client-example/page.tsx:20
+msgctxt "heading"
+msgid "example.description"
+msgstr "Lingui + Next.js RSC example"
+
+#. main heading of page
+#. js-lingui-explicit-id
+#: app/[lang]/server-example/page.tsx:28
+msgctxt "heading"
+msgid "server.description"
+msgstr "Lingui + Next.js RSC example"
+
+#: app/[lang]/icu-example/page.tsx:110
+msgid "male"
+msgstr "male"
+
+#: app/[lang]/icu-example/page.tsx:124
+msgid "other"
+msgstr "other"
+
+#: app/[lang]/page.tsx:12
+msgid "Server Example"
+msgstr "Server Example"
+
+#. main subtitle of page
+#. js-lingui-explicit-id
+#: app/[lang]/server-example/page.tsx:40
+msgctxt "heading"
+msgid "server.subtitle"
+msgstr "Server rendered"
+
+#. main heading of page
+#: app/[lang]/server-example/page.tsx:22
+msgctxt "heading"
+msgid "Server side translated title"
+msgstr "Server side translated title"
+
+#: app/[lang]/icu-example/page.tsx:24
+msgid "The ICU <0>(International Components for Unicode)</0> format is a way of handling different linguistic and cultural needs for a given localization."
+msgstr "The ICU <0>(International Components for Unicode)</0> format is a way of handling different linguistic and cultural needs for a given localization."
+
+#: app/[lang]/icu-example/page.tsx:20
+msgid "The ICU Format"
+msgstr "The ICU Format"
