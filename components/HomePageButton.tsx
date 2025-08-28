@@ -11,8 +11,6 @@ export const HomePageButton = () => (
   >
     <ArrowLeft size={14} />
 
-    <Trans id="home.button" context="navigation" comment="Home page button">
-      Home Page
-    </Trans>
+    <Trans>Home Page</Trans>
   </Link>
 );

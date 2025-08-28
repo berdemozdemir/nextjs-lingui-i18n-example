@@ -1,16 +1,15 @@
-import type { LinguiConfig } from "@lingui/conf";
+import type { LinguiConfig } from '@lingui/conf';
 
 const config: LinguiConfig = {
-  locales: ["en", "tr", "pseudo"],
-  pseudoLocale: "pseudo",
-  sourceLocale: "en",
+  locales: ['en', 'tr', 'de'],
+  sourceLocale: 'en',
   fallbackLocales: {
-    default: "en",
+    default: 'en',
   },
   catalogs: [
     {
-      path: "locales/{locale}",
-      include: ["app/"],
+      path: 'locales/{locale}',
+      include: ['app/'],
     },
   ],
 };

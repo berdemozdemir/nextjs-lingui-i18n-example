@@ -1,6 +1,7 @@
 export const Locales = {
   tr: { code: 'tr', nativeName: 'Türkçe', flag: '🇹🇷' },
   en: { code: 'en', nativeName: 'English', flag: '🌎' },
+  de: { code: 'de', nativeName: 'Deutsch', flag: '🇩🇪' },
 };
 
 export type AvailableLocale = keyof typeof Locales;

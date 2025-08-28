@@ -65,17 +65,17 @@ msgstr "ICU Örneği"
 
 #. main heading of page
 #. js-lingui-explicit-id
-#: app/[lang]/client-example/page.tsx:20
-msgctxt "heading"
-msgid "example.description"
-msgstr "Lingui + Next.js RSC Örneği"
-
-#. main heading of page
-#. js-lingui-explicit-id
 #: app/[lang]/server-example/page.tsx:28
 msgctxt "heading"
 msgid "server.description"
 msgstr "Lingui + Next.js RSC örneği"
+
+#. main heading of page
+#. js-lingui-explicit-id
+#: app/[lang]/client-example/page.tsx:20
+msgctxt "heading"
+msgid "example.description"
+msgstr "Lingui + Next.js RSC Örneği"
 
 #: app/[lang]/icu-example/page.tsx:110
 msgid "male"
