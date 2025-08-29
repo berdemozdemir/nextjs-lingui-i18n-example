@@ -9,7 +9,7 @@ const config: LinguiConfig = {
   catalogs: [
     {
       path: 'locales/{locale}',
-      include: ['app/'],
+      include: ['app/', 'components'],
     },
   ],
 };
