@@ -59,6 +59,10 @@ msgstr "Count Examples"
 msgid "female"
 msgstr "female"
 
+#: components/HomePageButton.tsx:14
+msgid "Home Page"
+msgstr "Home Page"
+
 #: app/[lang]/page.tsx:20
 msgid "ICU Examples"
 msgstr "ICU Examples"
