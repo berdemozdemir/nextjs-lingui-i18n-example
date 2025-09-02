@@ -17,11 +17,11 @@ export default function ClientExamplePage() {
   return (
     <Container showHomeButton>
       <h1 className="mb-3 text-2xl font-bold">
-        <Trans>The ICU Format</Trans>
+        <Trans id="icu.title">The ICU Format</Trans>
       </h1>
 
       <p className="mb-3">
-        <Trans>
+        <Trans id="icu.description">
           The ICU <strong>(International Components for Unicode)</strong> format
           is a way of handling different linguistic and cultural needs for a
           given localization.
@@ -29,7 +29,7 @@ export default function ClientExamplePage() {
       </p>
 
       <p className="mb-3">
-        <Trans>
+        <Trans id="icu.culturalDifferences">
           Across different cultures, things like count of objects, numbers (i.e.
           money), gender, and dates can cause a sentence structure to change in
           a unique way to that language.
@@ -37,7 +37,7 @@ export default function ClientExamplePage() {
       </p>
 
       <p>
-        <Trans>
+        <Trans id="icu.dynamicValues">
           Additionally, you may have a dynamic value used in your localization,
           which would need to be handled differently based on different
           languages&apos; grammar, etc.
@@ -47,12 +47,18 @@ export default function ClientExamplePage() {
       <hr className="my-4" />
 
       <h2 className="mb-3 text-xl font-bold">
-        <Trans>Count Examples</Trans>
+        <Trans id="icu.countExamples">Count Examples</Trans>
       </h2>
 
       <div className="flex items-center gap-2">
         <p className="w-26">
-          <Plural value={count} _0="No items" _1="# item" other="# items" />
+          <Plural
+            id="icu.count.example"
+            value={count}
+            _0="No items"
+            _1="# item"
+            other="# items"
+          />
         </p>
 
         <ChevronDown
@@ -69,6 +75,7 @@ export default function ClientExamplePage() {
       <div className="flex items-center gap-2">
         <p className="w-26">
           <SelectOrdinal
+            id="icu.rank.example"
             value={rank}
             _0="No rank"
             one="#st"
@@ -92,6 +99,7 @@ export default function ClientExamplePage() {
       <div className="flex items-center gap-4">
         <div className="w-24">
           <Select
+            id="icu.gender.example"
             value={gender}
             _male="He replied"
             _female="She replied"
@@ -107,21 +115,21 @@ export default function ClientExamplePage() {
           <div className="flex items-center gap-2">
             <RadioGroupItem id="male" value="male" />
             <Label htmlFor="male">
-              <Trans>male</Trans>
+              <Trans id="icu.gender.male">male</Trans>
             </Label>
           </div>
 
           <div className="flex items-center gap-2">
             <RadioGroupItem id="female" value="female" />
             <Label htmlFor="female">
-              <Trans>female</Trans>
+              <Trans id="icu.gender.female">female</Trans>
             </Label>
           </div>
 
           <div className="flex items-center gap-2">
             <RadioGroupItem id="other" value="other" />
             <Label htmlFor="other">
-              <Trans>other</Trans>
+              <Trans id="icu.gender.other">other</Trans>
             </Label>
           </div>
         </RadioGroup>

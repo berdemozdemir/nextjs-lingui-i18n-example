@@ -11,6 +11,8 @@ export const HomePageButton = () => (
   >
     <ArrowLeft size={14} />
 
-    <Trans>Home Page</Trans>
+    <Trans id="homeButton.label" comment="label for the home page button">
+      Home Page
+    </Trans>
   </Link>
 );

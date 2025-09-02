@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@lingui/core": "^5.4.1",
+    "@lingui/format-json": "^5.4.1",
     "@lingui/macro": "^5.4.1",
     "@lingui/react": "^5.4.1",
     "@radix-ui/react-label": "^2.1.7",

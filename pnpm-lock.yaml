@@ -11,6 +11,9 @@ importers:
       '@lingui/core':
         specifier: ^5.4.1
         version: 5.4.1(@lingui/babel-plugin-lingui-macro@5.4.1(typescript@5.9.2))
+      '@lingui/format-json':
+        specifier: ^5.4.1
+        version: 5.4.1(typescript@5.9.2)
       '@lingui/macro':
         specifier: ^5.4.1
         version: 5.4.1(@lingui/babel-plugin-lingui-macro@5.4.1(typescript@5.9.2))(react@19.1.0)
@@ -629,6 +632,10 @@ packages:
         optional: true
       babel-plugin-macros:
         optional: true
+
+  '@lingui/format-json@5.4.1':
+    resolution: {integrity: sha512-pd6JT2DnEAydvFkB07NyNc4JatQ+9PBnRZ1ni3eV3Xb38n/0JFjEKoam8j0lWTO8hZb4zf35E43dQ80v6IvADw==}
+    engines: {node: '>=20.0.0'}
 
   '@lingui/format-po@5.4.1':
     resolution: {integrity: sha512-IBVq3RRLNEVRzNZcdEw0qpM5NKX4e9wDmvJMorkR2OYrgTbhWx5gDYhXpEZ9yqtuEVhILMdriVNjAAUnDAJibA==}
@@ -3730,6 +3737,12 @@ snapshots:
       '@lingui/message-utils': 5.4.1
     optionalDependencies:
       '@lingui/babel-plugin-lingui-macro': 5.4.1(typescript@5.9.2)
+
+  '@lingui/format-json@5.4.1(typescript@5.9.2)':
+    dependencies:
+      '@lingui/conf': 5.4.1(typescript@5.9.2)
+    transitivePeerDependencies:
+      - typescript
 
   '@lingui/format-po@5.4.1(typescript@5.9.2)':
     dependencies:

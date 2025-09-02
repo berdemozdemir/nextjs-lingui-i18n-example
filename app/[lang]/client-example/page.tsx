@@ -10,7 +10,7 @@ export default function Page() {
         <Trans
           id="client.title"
           context="heading"
-          comment="main heading of page"
+          comment="main heading of client example page"
         >
           Client side translated title
         </Trans>
@@ -19,8 +19,8 @@ export default function Page() {
       <p className="mb-4 text-sm text-gray-600">
         <Trans
           id="example.description"
-          context="heading"
-          comment="main heading of page"
+          context="example"
+          comment="main heading of client example page"
         >
           Lingui + Next.js RSC example
         </Trans>
@@ -30,8 +30,7 @@ export default function Page() {
         <span className="size-1.5 rounded-full bg-emerald-400"></span>
         <Trans
           id="client.subtitle"
-          context="heading"
-          comment="main subtitle of page"
+          comment="main subtitle of client example page"
         >
           Client rendered
         </Trans>

@@ -9,15 +9,15 @@ export default function Home() {
     <div className="flex h-full flex-col items-center justify-center">
       <Container>
         <LinkCard href="/server-example">
-          <Trans>Server Example</Trans>
+          <Trans id="navigator.server">Server Example</Trans>
         </LinkCard>
 
         <LinkCard href="/client-example">
-          <Trans>Client Example</Trans>
+          <Trans id="navigator.client">Client Example</Trans>
         </LinkCard>
 
         <LinkCard href="/icu-example">
-          <Trans>ICU Examples</Trans>
+          <Trans id="navigator.icu">ICU Examples</Trans>
         </LinkCard>
       </Container>
     </div>

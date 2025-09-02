@@ -1,0 +1,23 @@
+{
+  "icu.count.example": "{count, plural, =0 {No items} =1 {# item} other {# items}}",
+  "icu.gender.example": "{gender, select, male {He replied} female {She replied} other {They replied}}",
+  "icu.rank.example": "{rank, selectordinal, =0 {No rank} one {#st} two {#nd} few {#rd} other {#th}}",
+  "icu.culturalDifferences": "Across different cultures, things like count of objects, numbers (i.e. money), gender, and dates can cause a sentence structure to change in a unique way to that language.",
+  "icu.dynamicValues": "Additionally, you may have a dynamic value used in your localization, which would need to be handled differently based on different languages' grammar, etc.",
+  "navigator.client": "Client Example",
+  "client.subtitle": "Client rendered",
+  "client.title": "Client side translated title",
+  "icu.countExamples": "Count Examples",
+  "icu.gender.female": "female",
+  "homeButton.label": "Home Page",
+  "navigator.icu": "ICU Examples",
+  "example.description": "Lingui + Next.js RSC example",
+  "server.example": "Lingui + Next.js RSC example",
+  "icu.gender.male": "male",
+  "icu.gender.other": "other",
+  "navigator.server": "Server Example",
+  "server.rendered": "Server rendered",
+  "server.title": "Server side translated title",
+  "icu.description": "The ICU <0>(International Components for Unicode)</0> format is a way of handling different linguistic and cultural needs for a given localization.",
+  "icu.title": "The ICU Format"
+}
