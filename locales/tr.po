@@ -8,7 +8,7 @@ msgstr ""
 "Language: tr\n"
 "Project-Id-Version: nextjs-lingui-i18n-example\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2025-09-03 21:42\n"
+"PO-Revision-Date: 2025-09-03 22:11\n"
 "Last-Translator: \n"
 "Language-Team: Turkish\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
@@ -38,7 +38,7 @@ msgstr "Farklı kültürlerde nesne sayısı, sayılar (örn. para), cinsiyet ve
 msgid "Additionally, you may have a dynamic value used in your localization, which would need to be handled differently based on different languages' grammar, etc."
 msgstr "Ayrıca yerelleştirmede kullanılan dinamik bir değer, dillerin dil bilgisi kurallarına göre farklı ele alınmalıdır."
 
-#: app/[lang]/page.tsx:18
+#: app/[lang]/page.tsx:16
 msgid "Client Example"
 msgstr "Client Örneği"
 
@@ -62,9 +62,13 @@ msgstr "kadın"
 msgid "Home Page"
 msgstr "Ana Sayfa"
 
-#: app/[lang]/page.tsx:22
+#: app/[lang]/page.tsx:20
 msgid "ICU Examples"
 msgstr "ICU Örneği"
+
+#: app/[lang]/client-example/page.tsx:14
+msgid "Lingui + Next.js RSC example"
+msgstr "Lingui + Nextjs RSC Örnekleri"
 
 #. main heading of page
 #. js-lingui-explicit-id
@@ -72,10 +76,6 @@ msgstr "ICU Örneği"
 msgctxt "heading"
 msgid "server.description"
 msgstr "Lingui + Nextjs Örnekleri"
-
-#: app/[lang]/client-example/page.tsx:14
-msgid "Lingui + Next.js RSC example"
-msgstr "Lingui + Nextjs RSC Örnekleri"
 
 #: app/[lang]/icu-example/page.tsx:110
 msgid "male"
@@ -85,7 +85,7 @@ msgstr "erkek"
 msgid "other"
 msgstr "diğer"
 
-#: app/[lang]/page.tsx:14
+#: app/[lang]/page.tsx:12
 msgid "Server Example"
 msgstr "Server Örneği"
 
@@ -104,7 +104,3 @@ msgstr "ICU <0>(Unicode için Uluslararası Bileşenler)</0> biçimi, belirli bi
 #: app/[lang]/icu-example/page.tsx:20
 msgid "The ICU Format"
 msgstr "ICU format"
-
-#: app/[lang]/page.tsx:11
-msgid "this is an example translation for crowdin test"
-msgstr ""

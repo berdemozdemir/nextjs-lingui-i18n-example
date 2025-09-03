@@ -8,8 +8,6 @@ export default function Home() {
   return (
     <div className="flex h-full flex-col items-center justify-center">
       <Container>
-        <Trans>this is an example translation for crowdin test</Trans>
-
         <LinkCard href="/server-example">
           <Trans>Server Example</Trans>
         </LinkCard>

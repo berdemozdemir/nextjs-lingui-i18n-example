@@ -1,16 +1,15 @@
 import type { Metadata } from 'next';
 import '../globals.css';
-// import { initLingui } from '@/lib/initLingui';
 import { LinguiClientProvider } from '@/components/LinguiClientProvider';
-import { allMessages, getI18nInstance } from '@/lib/i18n';
+import { allMessages } from '@/lib/i18n';
 import { LanguageSelector } from '@/components/LangSelector';
 import { setI18n } from '@lingui/react/server';
 import { ReactNode, use } from 'react';
 import { AvailableLocale } from '@/lib/common';
+import { initLingui } from '@/lib/initLingui';
 
 export const metadata: Metadata = {
   title: 'Lingui POC',
-  description: 'Proof of concept for Lingui with Next.js',
   icons: { icon: '/lingui-logo.svg' },
 };
 
@@ -24,9 +23,9 @@ type Props = {
 export default function RootLayout({ children, params }: Props) {
   const { lang } = use(params);
 
-  const i18n = getI18nInstance(lang);
+  const i18nInstance = initLingui(lang);
 
-  setI18n(i18n);
+  setI18n(i18nInstance);
 
   return (
     <html lang={lang}>
