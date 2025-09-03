@@ -33,7 +33,7 @@ msgstr "In unterschiedlichen Kulturen können Dinge wie Objektanzahl, Zahlen (z.
 msgid "Additionally, you may have a dynamic value used in your localization, which would need to be handled differently based on different languages' grammar, etc."
 msgstr "Außerdem kann es in der Lokalisierung dynamische Werte geben, die je nach Grammatik der jeweiligen Sprache unterschiedlich behandelt werden müssen."
 
-#: app/[lang]/page.tsx:16
+#: app/[lang]/page.tsx:20
 msgid "Client Example"
 msgstr "Client-Beispiel"
 
@@ -63,22 +63,22 @@ msgstr "weiblich"
 msgid "Home Page"
 msgstr "Startseite"
 
-#: app/[lang]/page.tsx:20
+#: app/[lang]/page.tsx:24
 msgid "ICU Examples"
 msgstr "ICU-Beispiele"
-
-#. main heading of page
-#. js-lingui-explicit-id
-#: app/[lang]/server-example/page.tsx:28
-msgctxt "heading"
-msgid "server.description"
-msgstr "Lingui + Next.js RSC Beispiel"
 
 #. main heading of page
 #. js-lingui-explicit-id
 #: app/[lang]/client-example/page.tsx:20
 msgctxt "heading"
 msgid "example.description"
+msgstr "Lingui + Next.js RSC Beispiel"
+
+#. main heading of page
+#. js-lingui-explicit-id
+#: app/[lang]/server-example/page.tsx:28
+msgctxt "heading"
+msgid "server.description"
 msgstr "Lingui + Next.js RSC Beispiel"
 
 #: app/[lang]/icu-example/page.tsx:110
@@ -89,7 +89,7 @@ msgstr "männlich"
 msgid "other"
 msgstr "divers"
 
-#: app/[lang]/page.tsx:12
+#: app/[lang]/page.tsx:16
 msgid "Server Example"
 msgstr "Server-Beispiel"
 
@@ -113,3 +113,7 @@ msgstr "Das ICU-Format <0>(International Components for Unicode)</0> ist eine Me
 #: app/[lang]/icu-example/page.tsx:20
 msgid "The ICU Format"
 msgstr "Das ICU-Format"
+
+#: app/[lang]/page.tsx:12
+msgid "This is an example translate for testing crowdin"
+msgstr ""
