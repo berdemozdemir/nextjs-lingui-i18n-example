@@ -2,16 +2,21 @@ msgid ""
 msgstr ""
 "POT-Creation-Date: 2025-08-25 23:18+0300\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: @lingui/cli\n"
 "Language: tr\n"
-"Project-Id-Version: \n"
+"Project-Id-Version: nextjs-lingui-i18n-example\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: \n"
+"PO-Revision-Date: 2025-09-03 20:46\n"
 "Last-Translator: \n"
-"Language-Team: \n"
-"Plural-Forms: \n"
+"Language-Team: Turkish\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Crowdin-Project: nextjs-lingui-i18n-example\n"
+"X-Crowdin-Project-ID: 825958\n"
+"X-Crowdin-Language: tr\n"
+"X-Crowdin-File: /main/locales/en.po\n"
+"X-Crowdin-File-ID: 10\n"
 
 #: app/[lang]/icu-example/page.tsx:55
 msgid "{count, plural, =0 {No items} =1 {# item} other {# items}}"
@@ -23,7 +28,7 @@ msgstr "{gender, select, male {Yanıtladı (e)} female {Yanıtladı (k)} other {
 
 #: app/[lang]/icu-example/page.tsx:71
 msgid "{rank, selectordinal, =0 {No rank} one {#st} two {#nd} few {#rd} other {#th}}"
-msgstr "{rank, selectordinal, =0 {Sıra yok} one {#. sırada} two {#. sırada} few {#. sırada} other {#. sırada}}"
+msgstr ""
 
 #: app/[lang]/icu-example/page.tsx:32
 msgid "Across different cultures, things like count of objects, numbers (i.e. money), gender, and dates can cause a sentence structure to change in a unique way to that language."
@@ -31,89 +36,71 @@ msgstr "Farklı kültürlerde nesne sayısı, sayılar (örn. para), cinsiyet ve
 
 #: app/[lang]/icu-example/page.tsx:40
 msgid "Additionally, you may have a dynamic value used in your localization, which would need to be handled differently based on different languages' grammar, etc."
-msgstr "Ayrıca yerelleştirmede kullanılan dinamik bir değer, dillerin dilbilgisi kurallarına göre farklı ele alınmalıdır."
+msgstr "Ayrıca yerelleştirmede kullanılan dinamik bir değer, dillerin dil bilgisi kurallarına göre farklı ele alınmalıdır."
 
-#: app/[lang]/page.tsx:20
+#: app/[lang]/page.tsx:16
 msgid "Client Example"
-msgstr "Client Örneği"
+msgstr ""
 
-#. main subtitle of page
-#. js-lingui-explicit-id
-#: app/[lang]/client-example/page.tsx:31
-msgctxt "heading"
-msgid "client.subtitle"
-msgstr "Kullanici Derlendi"
+#: app/[lang]/client-example/page.tsx:19
+msgid "Client rendered"
+msgstr ""
 
-#. main heading of page
-#. js-lingui-explicit-id
 #: app/[lang]/client-example/page.tsx:10
-msgctxt "heading"
-msgid "client.title"
-msgstr "Kullanici tarafi ceviri derlendi"
+msgid "Client side translated title"
+msgstr ""
 
 #: app/[lang]/icu-example/page.tsx:50
 msgid "Count Examples"
-msgstr "Sayı örnekleri"
+msgstr ""
 
 #: app/[lang]/icu-example/page.tsx:117
 msgid "female"
-msgstr "kadın"
+msgstr ""
 
 #: components/HomePageButton.tsx:14
 msgid "Home Page"
-msgstr "Ana Sayfa"
+msgstr ""
 
-#: app/[lang]/page.tsx:24
+#: app/[lang]/page.tsx:20
 msgid "ICU Examples"
-msgstr "ICU Örneği"
+msgstr ""
+
+#: app/[lang]/client-example/page.tsx:14
+msgid "Lingui + Next.js RSC example"
+msgstr ""
 
 #. main heading of page
 #. js-lingui-explicit-id
-#: app/[lang]/client-example/page.tsx:20
-msgctxt "heading"
-msgid "example.description"
-msgstr "Lingui + Next.js RSC Örneği"
-
-#. main heading of page
-#. js-lingui-explicit-id
-#: app/[lang]/server-example/page.tsx:28
+#: app/[lang]/server-example/page.tsx:26
 msgctxt "heading"
 msgid "server.description"
-msgstr "Lingui + Next.js RSC örneği"
+msgstr ""
 
 #: app/[lang]/icu-example/page.tsx:110
 msgid "male"
-msgstr "erkek"
+msgstr ""
 
 #: app/[lang]/icu-example/page.tsx:124
 msgid "other"
-msgstr "diğer"
+msgstr ""
 
-#: app/[lang]/page.tsx:16
+#: app/[lang]/page.tsx:12
 msgid "Server Example"
 msgstr "Server Örneği"
 
-#. main subtitle of page
-#. js-lingui-explicit-id
-#: app/[lang]/server-example/page.tsx:40
-msgctxt "heading"
-msgid "server.subtitle"
-msgstr "Server Derlendi"
+#: app/[lang]/server-example/page.tsx:38
+msgid "Server rendered"
+msgstr ""
 
-#. main heading of page
 #: app/[lang]/server-example/page.tsx:22
-msgctxt "heading"
 msgid "Server side translated title"
-msgstr "Sunucu tarafında çevrilmiş başlık"
+msgstr ""
 
 #: app/[lang]/icu-example/page.tsx:24
 msgid "The ICU <0>(International Components for Unicode)</0> format is a way of handling different linguistic and cultural needs for a given localization."
-msgstr "ICU <0>(Unicode için Uluslararası Bileşenler)</0> biçimi, belirli bir yerelleştirme için farklı dilsel ve kültürel gereksinimleri ele almanın bir yoludur."
+msgstr ""
 
 #: app/[lang]/icu-example/page.tsx:20
 msgid "The ICU Format"
-msgstr "ICU Biçimi"
-
-#: app/[lang]/page.tsx:12
-msgid "This is an example translate for testing crowdin"
 msgstr ""

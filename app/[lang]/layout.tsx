@@ -22,8 +22,6 @@ type Props = {
 };
 
 export default function RootLayout({ children, params }: Props) {
-  // initLingui(lang);
-
   const { lang } = use(params);
 
   const i18n = getI18nInstance(lang);
