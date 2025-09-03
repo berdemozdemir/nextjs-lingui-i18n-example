@@ -8,7 +8,7 @@ msgstr ""
 "Language: de\n"
 "Project-Id-Version: nextjs-lingui-i18n-example\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2025-09-03 21:10\n"
+"PO-Revision-Date: 2025-09-03 21:42\n"
 "Last-Translator: \n"
 "Language-Team: German\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
@@ -20,88 +20,91 @@ msgstr ""
 
 #: app/[lang]/icu-example/page.tsx:55
 msgid "{count, plural, =0 {No items} =1 {# item} other {# items}}"
-msgstr ""
+msgstr "{count, plural, =0 {Keine Elemente} =1 {# Element} other {# Elemente}}"
 
 #: app/[lang]/icu-example/page.tsx:94
 msgid "{gender, select, male {He replied} female {She replied} other {They replied}}"
-msgstr ""
+msgstr "{gender, select, male {Er antwortete} female {Sie antwortete} other {Sie antworteten}}"
 
 #: app/[lang]/icu-example/page.tsx:71
 msgid "{rank, selectordinal, =0 {No rank} one {#st} two {#nd} few {#rd} other {#th}}"
-msgstr ""
+msgstr "{rank, selectordinal, =0 {Kein Rang} other {#.}}"
 
 #: app/[lang]/icu-example/page.tsx:32
 msgid "Across different cultures, things like count of objects, numbers (i.e. money), gender, and dates can cause a sentence structure to change in a unique way to that language."
-msgstr ""
+msgstr "In verschiedenen Kulturen können Faktoren wie Objektanzahl, Zahlen (z. B. Geld), Genus und Datumsangaben die Satzstruktur sprachspezifisch verändern."
 
 #: app/[lang]/icu-example/page.tsx:40
 msgid "Additionally, you may have a dynamic value used in your localization, which would need to be handled differently based on different languages' grammar, etc."
-msgstr ""
+msgstr "Zusätzlich kann es in der Lokalisierung einen dynamischen Wert geben, der je nach Grammatik usw. verschiedener Sprachen unterschiedlich behandelt werden muss."
 
-#: app/[lang]/page.tsx:16
+#: app/[lang]/page.tsx:18
 msgid "Client Example"
-msgstr ""
+msgstr "Client-Beispiel"
 
 #: app/[lang]/client-example/page.tsx:19
 msgid "Client rendered"
-msgstr ""
+msgstr "Clientseitig gerendert"
 
 #: app/[lang]/client-example/page.tsx:10
 msgid "Client side translated title"
-msgstr ""
+msgstr "Clientseitig übersetzter Titel"
 
 #: app/[lang]/icu-example/page.tsx:50
 msgid "Count Examples"
-msgstr ""
+msgstr "Beispiele zählen"
 
 #: app/[lang]/icu-example/page.tsx:117
 msgid "female"
-msgstr ""
+msgstr "weiblich"
 
 #: components/HomePageButton.tsx:14
 msgid "Home Page"
-msgstr ""
+msgstr "Startseite"
 
-#: app/[lang]/page.tsx:20
+#: app/[lang]/page.tsx:22
 msgid "ICU Examples"
-msgstr ""
-
-#: app/[lang]/client-example/page.tsx:14
-msgid "Lingui + Next.js RSC example"
-msgstr ""
+msgstr "IAU-Beispiele"
 
 #. main heading of page
 #. js-lingui-explicit-id
 #: app/[lang]/server-example/page.tsx:26
 msgctxt "heading"
 msgid "server.description"
-msgstr ""
+msgstr "Lingui + Next.js RSC Beispiel"
+
+#: app/[lang]/client-example/page.tsx:14
+msgid "Lingui + Next.js RSC example"
+msgstr "Lingui + Next.js RSC Beispiel"
 
 #: app/[lang]/icu-example/page.tsx:110
 msgid "male"
-msgstr ""
+msgstr "männlich"
 
 #: app/[lang]/icu-example/page.tsx:124
 msgid "other"
-msgstr ""
+msgstr "anderer"
 
-#: app/[lang]/page.tsx:12
+#: app/[lang]/page.tsx:14
 msgid "Server Example"
-msgstr ""
+msgstr "Server-Beispiel"
 
 #: app/[lang]/server-example/page.tsx:38
 msgid "Server rendered"
-msgstr ""
+msgstr "Server-gerendert"
 
 #: app/[lang]/server-example/page.tsx:22
 msgid "Server side translated title"
-msgstr ""
+msgstr "Serverseitig übersetzter Titel"
 
 #: app/[lang]/icu-example/page.tsx:24
 msgid "The ICU <0>(International Components for Unicode)</0> format is a way of handling different linguistic and cultural needs for a given localization."
-msgstr ""
+msgstr "Das ICU <0>(International Components for Unicode)</0> Format ist eine Methode, um unterschiedliche sprachliche und kulturelle Anforderungen bei einer bestimmten Lokalisierung zu handhaben."
 
 #: app/[lang]/icu-example/page.tsx:20
 msgid "The ICU Format"
-msgstr ""
+msgstr "Das ICU Format"
 
+#: app/[lang]/page.tsx:11
+msgid "this is an example translation for crowdin test"
+msgstr ""
