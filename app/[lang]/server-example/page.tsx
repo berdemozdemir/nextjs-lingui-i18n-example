@@ -26,7 +26,7 @@ export default function Page({
         <Trans
           id="server.description"
           context="heading"
-          comment="main heading of page"
+          comment="main heading of page" // context and comment for translators in crowdin
         >
           Lingui + Next.js RSC example
         </Trans>
