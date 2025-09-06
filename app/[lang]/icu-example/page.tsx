@@ -4,7 +4,7 @@ import { Container } from '@/components/Container';
 import { Label } from '@/components/ui/label';
 import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';
 import { Plural, Select, SelectOrdinal, Trans } from '@lingui/react/macro';
-import { ChevronDown, ChevronUp } from 'lucide-react';
+import { ArrowRight, ChevronDown, ChevronUp } from 'lucide-react';
 import { useState } from 'react';
 
 export default function ClientExamplePage() {
@@ -125,6 +125,33 @@ export default function ClientExamplePage() {
             </Label>
           </div>
         </RadioGroup>
+      </div>
+
+      <hr className="my-4" />
+
+      <p className="text-sm text-gray-500">
+        <Trans>
+          Translations can be used with dynamic values, as shown in the examples
+          below:
+        </Trans>
+      </p>
+
+      <div className="flex items-center gap-2">
+        <ArrowRight className="mx-2" />
+
+        <Trans>You&apos;ve selected the value {count}</Trans>
+      </div>
+
+      <div className="flex items-center gap-2">
+        <ArrowRight className="mx-2" />
+
+        <Trans>You&apos;ve ranked as {rank}</Trans>
+      </div>
+
+      <div className="flex items-center gap-2">
+        <ArrowRight className="mx-2" />
+
+        <Trans>You&apos;ve selected the gender {gender}</Trans>
       </div>
     </Container>
   );
