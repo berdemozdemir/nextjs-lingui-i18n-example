@@ -8,7 +8,7 @@ msgstr ""
 "Language: tr\n"
 "Project-Id-Version: nextjs-lingui-i18n-example\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2025-09-03 23:21\n"
+"PO-Revision-Date: 2025-09-06 14:35\n"
 "Last-Translator: \n"
 "Language-Team: Turkish\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
@@ -28,7 +28,7 @@ msgstr "{gender, select, male {Yanıtladı (e)} female {Yanıtladı (k)} other {
 
 #: app/[lang]/icu-example/page.tsx:71
 msgid "{rank, selectordinal, =0 {No rank} one {#st} two {#nd} few {#rd} other {#th}}"
-msgstr ""
+msgstr "{rank, selectordinal, =0 {Sıra yok} other {#. sırada}}"
 
 #: app/[lang]/icu-example/page.tsx:32
 msgid "Across different cultures, things like count of objects, numbers (i.e. money), gender, and dates can cause a sentence structure to change in a unique way to that language."
@@ -91,7 +91,7 @@ msgstr "Server Örneği"
 
 #: app/[lang]/server-example/page.tsx:38
 msgid "Server rendered"
-msgstr "Server tarafı derlendi oldu"
+msgstr "Server tarafı derlendi"
 
 #: app/[lang]/server-example/page.tsx:22
 msgid "Server side translated title"
