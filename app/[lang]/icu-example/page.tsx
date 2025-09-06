@@ -51,7 +51,7 @@ export default function ClientExamplePage() {
       </h2>
 
       <div className="flex items-center gap-2">
-        <p className="w-26">
+        <p className="w-32">
           <Plural value={count} _0="No items" _1="# item" other="# items" />
         </p>
 
@@ -67,7 +67,7 @@ export default function ClientExamplePage() {
       </div>
 
       <div className="flex items-center gap-2">
-        <p className="w-26">
+        <p className="w-32">
           <SelectOrdinal
             value={rank}
             _0="No rank"
@@ -90,7 +90,7 @@ export default function ClientExamplePage() {
       </div>
 
       <div className="flex items-center gap-4">
-        <div className="w-24">
+        <div className="w-30">
           <Select
             value={gender}
             _male="He replied"
