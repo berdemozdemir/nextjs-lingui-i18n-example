@@ -8,7 +8,7 @@ msgstr ""
 "Language: tr\n"
 "Project-Id-Version: nextjs-lingui-i18n-example\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2025-09-06 14:35\n"
+"PO-Revision-Date: 2025-09-07 16:17\n"
 "Last-Translator: \n"
 "Language-Team: Turkish\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
@@ -107,16 +107,17 @@ msgstr "ICU format"
 
 #: app/[lang]/icu-example/page.tsx:133
 msgid "Translations can be used with dynamic values, as shown in the examples below:"
-msgstr ""
+msgstr "Çeviriler, aşağıdaki örneklerde gösterildiği gibi dinamik değerlerle kullanılabilir:"
 
 #: app/[lang]/icu-example/page.tsx:148
 msgid "You've ranked as {rank}"
-msgstr ""
+msgstr "{rank} yer aldınız"
 
 #: app/[lang]/icu-example/page.tsx:154
 msgid "You've selected the gender {gender}"
-msgstr ""
+msgstr "Cinsiyeti {gender} seçtiniz"
 
 #: app/[lang]/icu-example/page.tsx:142
 msgid "You've selected the value {count}"
-msgstr ""
+msgstr "{count} değerini seçtiniz"
+
