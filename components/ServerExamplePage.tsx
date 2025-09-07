@@ -1,9 +1,7 @@
-import { Trans, useLingui } from '@lingui/react/macro';
+import { Trans } from '@lingui/react/macro';
 import { Container } from './Container';
 
 export const ServerExamplePage = () => {
-  const { t } = useLingui();
-
   return (
     <Container showHomeButton>
       <h1 className="text-xl font-semibold tracking-tight text-gray-800 sm:text-2xl">
@@ -23,7 +21,7 @@ export const ServerExamplePage = () => {
       <div className="inline-flex items-center gap-2 rounded-full border border-black/5 bg-white/60 px-3 py-1 text-xs text-gray-600">
         <span className="size-1.5 rounded-full bg-emerald-400"></span>
 
-        <p>{t`Server rendered`}</p>
+        <Trans>Server rendered</Trans>
       </div>
     </Container>
   );

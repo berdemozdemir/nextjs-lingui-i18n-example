@@ -13,23 +13,28 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
-#: app/[lang]/icu-example/page.tsx:55
+#. js-lingui-explicit-id
+#: app/api/test/route.ts:12
+msgid "api.hello"
+msgstr "api.hello"
+
+#: app/[lang]/icu-example/page.tsx:59
 msgid "{count, plural, =0 {No items} =1 {# item} other {# items}}"
 msgstr "{count, plural, =0 {No items} =1 {# item} other {# items}}"
 
-#: app/[lang]/icu-example/page.tsx:94
+#: app/[lang]/icu-example/page.tsx:98
 msgid "{gender, select, male {He replied} female {She replied} other {They replied}}"
 msgstr "{gender, select, male {He replied} female {She replied} other {They replied}}"
 
-#: app/[lang]/icu-example/page.tsx:71
+#: app/[lang]/icu-example/page.tsx:75
 msgid "{rank, selectordinal, =0 {No rank} one {#st} two {#nd} few {#rd} other {#th}}"
 msgstr "{rank, selectordinal, =0 {No rank} one {#st} two {#nd} few {#rd} other {#th}}"
 
-#: app/[lang]/icu-example/page.tsx:32
+#: app/[lang]/icu-example/page.tsx:40
 msgid "Across different cultures, things like count of objects, numbers (i.e. money), gender, and dates can cause a sentence structure to change in a unique way to that language."
 msgstr "Across different cultures, things like count of objects, numbers (i.e. money), gender, and dates can cause a sentence structure to change in a unique way to that language."
 
-#: app/[lang]/icu-example/page.tsx:40
+#: app/[lang]/icu-example/page.tsx:48
 msgid "Additionally, you may have a dynamic value used in your localization, which would need to be handled differently based on different languages' grammar, etc."
 msgstr "Additionally, you may have a dynamic value used in your localization, which would need to be handled differently based on different languages' grammar, etc."
 
@@ -46,10 +51,10 @@ msgid "Client side translated title"
 msgstr "Client side translated title"
 
 #: app/[lang]/icu-example/page.tsx:50
-msgid "Count Examples"
-msgstr "Count Examples"
+#~ msgid "Count Examples"
+#~ msgstr "Count Examples"
 
-#: app/[lang]/icu-example/page.tsx:117
+#: app/[lang]/icu-example/page.tsx:121
 msgid "female"
 msgstr "female"
 
@@ -72,11 +77,11 @@ msgctxt "heading"
 msgid "server.description"
 msgstr "Lingui + Next.js RSC example"
 
-#: app/[lang]/icu-example/page.tsx:110
+#: app/[lang]/icu-example/page.tsx:114
 msgid "male"
 msgstr "male"
 
-#: app/[lang]/icu-example/page.tsx:124
+#: app/[lang]/icu-example/page.tsx:128
 msgid "other"
 msgstr "other"
 
@@ -92,11 +97,11 @@ msgstr "Server rendered"
 msgid "Server side translated title"
 msgstr "Server side translated title"
 
-#: app/[lang]/icu-example/page.tsx:24
+#: app/[lang]/icu-example/page.tsx:32
 msgid "The ICU <0>(International Components for Unicode)</0> format is a way of handling different linguistic and cultural needs for a given localization."
 msgstr "The ICU <0>(International Components for Unicode)</0> format is a way of handling different linguistic and cultural needs for a given localization."
 
-#: app/[lang]/icu-example/page.tsx:20
+#: app/[lang]/icu-example/page.tsx:28
 msgid "The ICU Format"
 msgstr "The ICU Format"
 
@@ -108,18 +113,18 @@ msgstr "The ICU Format"
 #~ msgid "this is an example translation test text22"
 #~ msgstr "this is an example translation test text22"
 
-#: app/[lang]/icu-example/page.tsx:133
+#: app/[lang]/icu-example/page.tsx:172
 msgid "Translations can be used with dynamic values, as shown in the examples below:"
 msgstr "Translations can be used with dynamic values, as shown in the examples below:"
 
-#: app/[lang]/icu-example/page.tsx:148
+#: app/[lang]/icu-example/page.tsx:187
 msgid "You've ranked as {rank}"
 msgstr "You've ranked as {rank}"
 
 #: app/[lang]/icu-example/page.tsx:154
-msgid "You've selected the gender {gender}"
-msgstr "You've selected the gender {gender}"
+#~ msgid "You've selected the gender {gender}"
+#~ msgstr "You've selected the gender {gender}"
 
-#: app/[lang]/icu-example/page.tsx:142
+#: app/[lang]/icu-example/page.tsx:181
 msgid "You've selected the value {count}"
 msgstr "You've selected the value {count}"

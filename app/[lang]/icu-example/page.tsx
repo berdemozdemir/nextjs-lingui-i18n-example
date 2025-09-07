@@ -3,11 +3,19 @@
 import { Container } from '@/components/Container';
 import { Label } from '@/components/ui/label';
 import { RadioGroup, RadioGroupItem } from '@/components/ui/radio-group';
-import { Plural, Select, SelectOrdinal, Trans } from '@lingui/react/macro';
+import {
+  Plural,
+  Select,
+  SelectOrdinal,
+  Trans,
+  useLingui,
+} from '@lingui/react/macro';
 import { ArrowRight, ChevronDown, ChevronUp } from 'lucide-react';
 import { useState } from 'react';
 
 export default function ClientExamplePage() {
+  const { i18n } = useLingui();
+
   const [count, setCount] = useState(0);
 
   const [rank, setRank] = useState(0);
@@ -45,10 +53,6 @@ export default function ClientExamplePage() {
       </p>
 
       <hr className="my-4" />
-
-      <h2 className="mb-3 text-xl font-bold">
-        <Trans>Count Examples</Trans>
-      </h2>
 
       <div className="flex items-center gap-2">
         <p className="w-32">
@@ -129,6 +133,41 @@ export default function ClientExamplePage() {
 
       <hr className="my-4" />
 
+      <div>
+        <li>{i18n.number(12345.678)}</li>
+
+        <li>
+          {i18n.number(12345.678, { style: 'currency', currency: 'USD' })}
+        </li>
+
+        <li>
+          {i18n.number(0.75, { style: 'percent' })} {/* %75 */}
+        </li>
+
+        <li>
+          {i18n.number(123456789, { notation: 'compact' })} {/* 123M */}
+        </li>
+
+        <li>
+          {i18n.number(1234.56, {
+            minimumFractionDigits: 2,
+            maximumFractionDigits: 2,
+          })}{' '}
+        </li>
+
+        <li>{i18n.date(new Date(), { dateStyle: 'short' })}</li>
+
+        <li>{i18n.date(new Date(), { dateStyle: 'long' })}</li>
+
+        <li>{i18n.date(new Date(), { timeStyle: 'short' })}</li>
+
+        <li>
+          {i18n.date(new Date(), { dateStyle: 'full', timeStyle: 'long' })}
+        </li>
+      </div>
+
+      <hr className="my-4" />
+
       <p className="text-sm text-gray-500">
         <Trans>
           Translations can be used with dynamic values, as shown in the examples
@@ -146,12 +185,6 @@ export default function ClientExamplePage() {
         <ArrowRight className="mx-2" />
 
         <Trans>You&apos;ve ranked as {rank}</Trans>
-      </div>
-
-      <div className="flex items-center gap-2">
-        <ArrowRight className="mx-2" />
-
-        <Trans>You&apos;ve selected the gender {gender}</Trans>
       </div>
     </Container>
   );

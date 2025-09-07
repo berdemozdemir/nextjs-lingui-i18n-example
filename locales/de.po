@@ -18,23 +18,28 @@ msgstr ""
 "X-Crowdin-File: /main/locales/en.po\n"
 "X-Crowdin-File-ID: 10\n"
 
-#: app/[lang]/icu-example/page.tsx:55
+#. js-lingui-explicit-id
+#: app/api/test/route.ts:12
+msgid "api.hello"
+msgstr ""
+
+#: app/[lang]/icu-example/page.tsx:59
 msgid "{count, plural, =0 {No items} =1 {# item} other {# items}}"
 msgstr "{count, plural, =0 {Keine Elemente} =1 {# Element} other {# Elemente}}"
 
-#: app/[lang]/icu-example/page.tsx:94
+#: app/[lang]/icu-example/page.tsx:98
 msgid "{gender, select, male {He replied} female {She replied} other {They replied}}"
 msgstr "{gender, select, male {Er antwortete} female {Sie antwortete} other {Sie antworteten}}"
 
-#: app/[lang]/icu-example/page.tsx:71
+#: app/[lang]/icu-example/page.tsx:75
 msgid "{rank, selectordinal, =0 {No rank} one {#st} two {#nd} few {#rd} other {#th}}"
 msgstr "{rank, selectordinal, =0 {Kein Rang} other {#.}}"
 
-#: app/[lang]/icu-example/page.tsx:32
+#: app/[lang]/icu-example/page.tsx:40
 msgid "Across different cultures, things like count of objects, numbers (i.e. money), gender, and dates can cause a sentence structure to change in a unique way to that language."
 msgstr "In verschiedenen Kulturen können Faktoren wie Objektanzahl, Zahlen (z. B. Geld), Genus und Datumsangaben die Satzstruktur sprachspezifisch verändern."
 
-#: app/[lang]/icu-example/page.tsx:40
+#: app/[lang]/icu-example/page.tsx:48
 msgid "Additionally, you may have a dynamic value used in your localization, which would need to be handled differently based on different languages' grammar, etc."
 msgstr "Zusätzlich kann es in der Lokalisierung einen dynamischen Wert geben, der je nach Grammatik usw. verschiedener Sprachen unterschiedlich behandelt werden muss."
 
@@ -51,10 +56,10 @@ msgid "Client side translated title"
 msgstr "Clientseitig übersetzter Titel"
 
 #: app/[lang]/icu-example/page.tsx:50
-msgid "Count Examples"
-msgstr "Beispiele zählen"
+#~ msgid "Count Examples"
+#~ msgstr "Beispiele zählen"
 
-#: app/[lang]/icu-example/page.tsx:117
+#: app/[lang]/icu-example/page.tsx:121
 msgid "female"
 msgstr "weiblich"
 
@@ -77,11 +82,11 @@ msgctxt "heading"
 msgid "server.description"
 msgstr "Lingui + Next.js RSC Beispiel"
 
-#: app/[lang]/icu-example/page.tsx:110
+#: app/[lang]/icu-example/page.tsx:114
 msgid "male"
 msgstr "männlich"
 
-#: app/[lang]/icu-example/page.tsx:124
+#: app/[lang]/icu-example/page.tsx:128
 msgid "other"
 msgstr "anderer"
 
@@ -97,11 +102,11 @@ msgstr "Server-gerendert"
 msgid "Server side translated title"
 msgstr "Serverseitig übersetzter Titel"
 
-#: app/[lang]/icu-example/page.tsx:24
+#: app/[lang]/icu-example/page.tsx:32
 msgid "The ICU <0>(International Components for Unicode)</0> format is a way of handling different linguistic and cultural needs for a given localization."
 msgstr "Das ICU <0>(International Components for Unicode)</0> Format ist eine Methode, um unterschiedliche sprachliche und kulturelle Anforderungen bei einer bestimmten Lokalisierung zu handhaben."
 
-#: app/[lang]/icu-example/page.tsx:20
+#: app/[lang]/icu-example/page.tsx:28
 msgid "The ICU Format"
 msgstr "Das ICU Format"
 
@@ -113,18 +118,18 @@ msgstr "Das ICU Format"
 #~ msgid "this is an example translation test text22"
 #~ msgstr "alamacna ceviri2"
 
-#: app/[lang]/icu-example/page.tsx:133
+#: app/[lang]/icu-example/page.tsx:172
 msgid "Translations can be used with dynamic values, as shown in the examples below:"
 msgstr "Übersetzungen können mit dynamischen Werten verwendet werden, wie in den folgenden Beispielen gezeigt:"
 
-#: app/[lang]/icu-example/page.tsx:148
+#: app/[lang]/icu-example/page.tsx:187
 msgid "You've ranked as {rank}"
 msgstr "Sie haben den Rang {rank} erreicht"
 
 #: app/[lang]/icu-example/page.tsx:154
-msgid "You've selected the gender {gender}"
-msgstr "Sie haben das Geschlecht {gender} ausgewählt."
+#~ msgid "You've selected the gender {gender}"
+#~ msgstr "Sie haben das Geschlecht {gender} ausgewählt."
 
-#: app/[lang]/icu-example/page.tsx:142
+#: app/[lang]/icu-example/page.tsx:181
 msgid "You've selected the value {count}"
 msgstr "Sie haben den Wert {count} ausgewählt"

@@ -7,7 +7,7 @@
     "build": "lingui compile && next build",
     "start": "next start",
     "lint": "eslint",
-    "i18n:extract": "lingui extract",
+    "i18n:extract": "lingui extract --clean",
     "i18n:compile": "lingui compile"
   },
   "dependencies": {
