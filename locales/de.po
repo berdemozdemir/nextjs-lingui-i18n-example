@@ -66,15 +66,15 @@ msgstr "Startseite"
 msgid "ICU Examples"
 msgstr "IAU-Beispiele"
 
+#: app/[lang]/client-example/page.tsx:16
+msgid "Lingui + Next.js RSC example"
+msgstr "Lingui + Next.js RSC Beispiel"
+
 #. main heading of page
 #. js-lingui-explicit-id
 #: components/ServerExamplePage.tsx:14
 msgctxt "heading"
 msgid "server.description"
-msgstr "Lingui + Next.js RSC Beispiel"
-
-#: app/[lang]/client-example/page.tsx:16
-msgid "Lingui + Next.js RSC example"
 msgstr "Lingui + Next.js RSC Beispiel"
 
 #: app/[lang]/icu-example/page.tsx:110
@@ -105,6 +105,10 @@ msgstr "Das ICU <0>(International Components for Unicode)</0> Format ist eine Me
 msgid "The ICU Format"
 msgstr "Das ICU Format"
 
+#: app/[lang]/client-example/page.tsx:24
+msgid "this is an example translation test text"
+msgstr ""
+
 #: app/[lang]/icu-example/page.tsx:133
 msgid "Translations can be used with dynamic values, as shown in the examples below:"
 msgstr "Übersetzungen können mit dynamischen Werten verwendet werden, wie in den folgenden Beispielen gezeigt:"
@@ -120,4 +124,3 @@ msgstr "Sie haben das Geschlecht {gender} ausgewählt."
 #: app/[lang]/icu-example/page.tsx:142
 msgid "You've selected the value {count}"
 msgstr "Sie haben den Wert {count} ausgewählt"
-

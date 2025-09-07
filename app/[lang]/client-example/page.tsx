@@ -20,6 +20,8 @@ export default function Page() {
         <span className="size-1.5 rounded-full bg-emerald-400"></span>
 
         <p>{t`Client rendered`}</p>
+
+        <p>{t`this is an example translation test text`}</p>
       </div>
     </Container>
   );

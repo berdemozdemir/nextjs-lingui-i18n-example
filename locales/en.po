@@ -61,15 +61,15 @@ msgstr "Home Page"
 msgid "ICU Examples"
 msgstr "ICU Examples"
 
+#: app/[lang]/client-example/page.tsx:16
+msgid "Lingui + Next.js RSC example"
+msgstr "Lingui + Next.js RSC example"
+
 #. main heading of page
 #. js-lingui-explicit-id
 #: components/ServerExamplePage.tsx:14
 msgctxt "heading"
 msgid "server.description"
-msgstr "Lingui + Next.js RSC example"
-
-#: app/[lang]/client-example/page.tsx:16
-msgid "Lingui + Next.js RSC example"
 msgstr "Lingui + Next.js RSC example"
 
 #: app/[lang]/icu-example/page.tsx:110
@@ -99,6 +99,10 @@ msgstr "The ICU <0>(International Components for Unicode)</0> format is a way of
 #: app/[lang]/icu-example/page.tsx:20
 msgid "The ICU Format"
 msgstr "The ICU Format"
+
+#: app/[lang]/client-example/page.tsx:24
+msgid "this is an example translation test text"
+msgstr "this is an example translation test text"
 
 #: app/[lang]/icu-example/page.tsx:133
 msgid "Translations can be used with dynamic values, as shown in the examples below:"
