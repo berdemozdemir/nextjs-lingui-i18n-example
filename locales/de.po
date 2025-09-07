@@ -8,7 +8,7 @@ msgstr ""
 "Language: de\n"
 "Project-Id-Version: nextjs-lingui-i18n-example\n"
 "Report-Msgid-Bugs-To: \n"
-"PO-Revision-Date: 2025-09-07 16:22\n"
+"PO-Revision-Date: 2025-09-07 17:15\n"
 "Last-Translator: \n"
 "Language-Team: German\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
@@ -106,12 +106,12 @@ msgid "The ICU Format"
 msgstr "Das ICU Format"
 
 #: app/[lang]/client-example/page.tsx:24
-msgid "this is an example translation test text"
-msgstr ""
+#~ msgid "this is an example translation test text"
+#~ msgstr "almanca ceviri"
 
 #: app/[lang]/client-example/page.tsx:26
-msgid "this is an example translation test text22"
-msgstr ""
+#~ msgid "this is an example translation test text22"
+#~ msgstr "alamacna ceviri2"
 
 #: app/[lang]/icu-example/page.tsx:133
 msgid "Translations can be used with dynamic values, as shown in the examples below:"
