@@ -2,47 +2,47 @@ import Negotiator from 'negotiator';
 import { NextRequest, NextResponse } from 'next/server';
 import linguiConfig from './lingui.config';
 
-const { locales } = linguiConfig;
-const LOCALE_COOKIE = 'your_locale_cookie';
+const locales = linguiConfig.locales as readonly string[];
+
+type Locale = (typeof locales)[number];
+
+const LOCALE_COOKIE = 'lang';
+
+const isSupported = (l: unknown): l is Locale =>
+  typeof l === 'string' && locales.includes(l);
+
+function pickPreferred(req: NextRequest): Locale {
+  const h = { 'accept-language': req.headers.get('accept-language') || '' };
+  const preferred = new Negotiator({ headers: h }).languages([...locales])[0];
+  return (isSupported(preferred) ? preferred : locales[0]) as Locale;
+}
 
 export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
-  const hasLocale = locales.some(
-    (l) => pathname === `/${l}` || pathname.startsWith(`/${l}/`),
-  );
-  if (hasLocale) return NextResponse.next();
+  const seg0Raw = pathname.split('/')[1];
+  if (isSupported(seg0Raw)) {
+    const seg0: Locale = seg0Raw;
 
-  const cookieLocale = request.cookies.get(LOCALE_COOKIE)?.value;
-  if (cookieLocale && locales.includes(cookieLocale)) {
-    return redirectWithLocale(request, cookieLocale);
+    const reqHeaders = new Headers(request.headers);
+    reqHeaders.set('x-locale', seg0);
+
+    const res = NextResponse.next({ request: { headers: reqHeaders } });
+    res.cookies.set(LOCALE_COOKIE, seg0, { path: '/', sameSite: 'lax' });
+    return res;
   }
 
-  const ref = request.headers.get('referer');
-  if (ref) {
-    try {
-      const refUrl = new URL(ref);
-      const refLocale = locales.find(
-        (l) =>
-          refUrl.pathname === `/${l}` || refUrl.pathname.startsWith(`/${l}/`),
-      );
-      if (refLocale) return redirectWithLocale(request, refLocale);
-    } catch {}
-  }
+  const cookieLocaleRaw = request.cookies.get(LOCALE_COOKIE)?.value;
+  const locale: Locale = isSupported(cookieLocaleRaw)
+    ? cookieLocaleRaw
+    : pickPreferred(request);
 
-  const headers = {
-    'accept-language': request.headers.get('accept-language') || '',
-  };
-  const preferred =
-    new Negotiator({ headers }).languages(locales.slice())[0] || locales[0];
-
-  return redirectWithLocale(request, preferred);
-}
-
-function redirectWithLocale(request: NextRequest, locale: string) {
   const url = request.nextUrl.clone();
-  url.pathname = `/${locale}${request.nextUrl.pathname}`;
-  return NextResponse.redirect(url);
+  url.pathname = `/${locale}${pathname}`;
+
+  const res = NextResponse.redirect(url);
+  res.cookies.set(LOCALE_COOKIE, locale, { path: '/', sameSite: 'lax' });
+  return res;
 }
 
 export const config = {
