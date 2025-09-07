@@ -42,11 +42,11 @@ msgstr "Ayrıca yerelleştirmede kullanılan dinamik bir değer, dillerin dil bi
 msgid "Client Example"
 msgstr "Client Örneği"
 
-#: app/[lang]/client-example/page.tsx:19
+#: app/[lang]/client-example/page.tsx:22
 msgid "Client rendered"
 msgstr "Client Derlendi"
 
-#: app/[lang]/client-example/page.tsx:10
+#: app/[lang]/client-example/page.tsx:12
 msgid "Client side translated title"
 msgstr "Client tarafı çevirilmiş başlık"
 
@@ -66,16 +66,16 @@ msgstr "Ana Sayfa"
 msgid "ICU Examples"
 msgstr "ICU Örneği"
 
-#: app/[lang]/client-example/page.tsx:14
-msgid "Lingui + Next.js RSC example"
-msgstr "Lingui + Nextjs RSC Örnekleri"
-
 #. main heading of page
 #. js-lingui-explicit-id
-#: app/[lang]/server-example/page.tsx:26
+#: components/ServerExamplePage.tsx:14
 msgctxt "heading"
 msgid "server.description"
 msgstr "Lingui + Nextjs Örnekleri"
+
+#: app/[lang]/client-example/page.tsx:16
+msgid "Lingui + Next.js RSC example"
+msgstr "Lingui + Nextjs RSC Örnekleri"
 
 #: app/[lang]/icu-example/page.tsx:110
 msgid "male"
@@ -89,11 +89,11 @@ msgstr "diğer"
 msgid "Server Example"
 msgstr "Server Örneği"
 
-#: app/[lang]/server-example/page.tsx:38
+#: components/ServerExamplePage.tsx:26
 msgid "Server rendered"
 msgstr "Server tarafı derlendi"
 
-#: app/[lang]/server-example/page.tsx:22
+#: components/ServerExamplePage.tsx:10
 msgid "Server side translated title"
 msgstr "Server tarafı çevirilmiş başlık"
 
@@ -105,3 +105,18 @@ msgstr "ICU <0>(Unicode için Uluslararası Bileşenler)</0> biçimi, belirli bi
 msgid "The ICU Format"
 msgstr "ICU format"
 
+#: app/[lang]/icu-example/page.tsx:133
+msgid "Translations can be used with dynamic values, as shown in the examples below:"
+msgstr ""
+
+#: app/[lang]/icu-example/page.tsx:148
+msgid "You've ranked as {rank}"
+msgstr ""
+
+#: app/[lang]/icu-example/page.tsx:154
+msgid "You've selected the gender {gender}"
+msgstr ""
+
+#: app/[lang]/icu-example/page.tsx:142
+msgid "You've selected the value {count}"
+msgstr ""

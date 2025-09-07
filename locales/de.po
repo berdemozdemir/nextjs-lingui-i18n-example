@@ -42,11 +42,11 @@ msgstr "Zusätzlich kann es in der Lokalisierung einen dynamischen Wert geben, d
 msgid "Client Example"
 msgstr "Client-Beispiel"
 
-#: app/[lang]/client-example/page.tsx:19
+#: app/[lang]/client-example/page.tsx:22
 msgid "Client rendered"
 msgstr "Clientseitig gerendert"
 
-#: app/[lang]/client-example/page.tsx:10
+#: app/[lang]/client-example/page.tsx:12
 msgid "Client side translated title"
 msgstr "Clientseitig übersetzter Titel"
 
@@ -66,15 +66,15 @@ msgstr "Startseite"
 msgid "ICU Examples"
 msgstr "IAU-Beispiele"
 
-#: app/[lang]/client-example/page.tsx:14
-msgid "Lingui + Next.js RSC example"
-msgstr "Lingui + Next.js RSC Beispiel"
-
 #. main heading of page
 #. js-lingui-explicit-id
-#: app/[lang]/server-example/page.tsx:26
+#: components/ServerExamplePage.tsx:14
 msgctxt "heading"
 msgid "server.description"
+msgstr "Lingui + Next.js RSC Beispiel"
+
+#: app/[lang]/client-example/page.tsx:16
+msgid "Lingui + Next.js RSC example"
 msgstr "Lingui + Next.js RSC Beispiel"
 
 #: app/[lang]/icu-example/page.tsx:110
@@ -89,11 +89,11 @@ msgstr "anderer"
 msgid "Server Example"
 msgstr "Server-Beispiel"
 
-#: app/[lang]/server-example/page.tsx:38
+#: components/ServerExamplePage.tsx:26
 msgid "Server rendered"
 msgstr "Server-gerendert"
 
-#: app/[lang]/server-example/page.tsx:22
+#: components/ServerExamplePage.tsx:10
 msgid "Server side translated title"
 msgstr "Serverseitig übersetzter Titel"
 
@@ -105,3 +105,18 @@ msgstr "Das ICU <0>(International Components for Unicode)</0> Format ist eine Me
 msgid "The ICU Format"
 msgstr "Das ICU Format"
 
+#: app/[lang]/icu-example/page.tsx:133
+msgid "Translations can be used with dynamic values, as shown in the examples below:"
+msgstr ""
+
+#: app/[lang]/icu-example/page.tsx:148
+msgid "You've ranked as {rank}"
+msgstr ""
+
+#: app/[lang]/icu-example/page.tsx:154
+msgid "You've selected the gender {gender}"
+msgstr ""
+
+#: app/[lang]/icu-example/page.tsx:142
+msgid "You've selected the value {count}"
+msgstr ""
