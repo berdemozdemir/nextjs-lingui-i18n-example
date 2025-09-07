@@ -10,6 +10,10 @@
 !.yarn/releases
 !.yarn/versions
 
+/locales/de.js
+/locales/tr.js
+/locales/en.js
+
 # testing
 /coverage
 

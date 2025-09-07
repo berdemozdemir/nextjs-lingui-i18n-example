@@ -4,11 +4,11 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "lingui compile && next build",
     "start": "next start",
     "lint": "eslint",
-    "lingui:extract": "lingui extract --clean",
-    "longui:compile": "lingui compile"
+    "i18n:extract": "lingui extract",
+    "i18n:compile": "lingui compile"
   },
   "dependencies": {
     "@lingui/core": "^5.4.1",
