@@ -22,6 +22,8 @@ export default function Page() {
         <p>{t`Client rendered`}</p>
 
         <p>{t`this is an example translation test text`}</p>
+
+        <Trans>this is an example translation test text22</Trans>
       </div>
     </Container>
   );

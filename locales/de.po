@@ -109,6 +109,10 @@ msgstr "Das ICU Format"
 msgid "this is an example translation test text"
 msgstr ""
 
+#: app/[lang]/client-example/page.tsx:26
+msgid "this is an example translation test text22"
+msgstr ""
+
 #: app/[lang]/icu-example/page.tsx:133
 msgid "Translations can be used with dynamic values, as shown in the examples below:"
 msgstr "Übersetzungen können mit dynamischen Werten verwendet werden, wie in den folgenden Beispielen gezeigt:"
