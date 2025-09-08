@@ -17,7 +17,15 @@ export default function Home() {
         </LinkCard>
 
         <LinkCard href="/icu-example">
-          <Trans>ICU Examples</Trans>
+          <Trans>ICU Example</Trans>
+        </LinkCard>
+
+        <LinkCard href="/action-example">
+          <Trans>Action Example</Trans>
+        </LinkCard>
+
+        <LinkCard href="/api-example">
+          <Trans>API Example</Trans>
         </LinkCard>
       </Container>
     </div>

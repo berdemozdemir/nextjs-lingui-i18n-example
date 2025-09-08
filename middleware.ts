@@ -20,6 +20,10 @@ function pickPreferred(req: NextRequest): Locale {
 export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
+  if (pathname.startsWith('/api/') || pathname.startsWith('/_next')) {
+    return NextResponse.next();
+  }
+
   const seg0Raw = pathname.split('/')[1];
   if (isSupported(seg0Raw)) {
     const seg0: Locale = seg0Raw;

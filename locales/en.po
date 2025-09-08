@@ -13,11 +13,6 @@ msgstr ""
 "Language-Team: \n"
 "Plural-Forms: \n"
 
-#. js-lingui-explicit-id
-#: app/api/test/route.ts:12
-msgid "api.hello"
-msgstr "api.hello"
-
 #: app/[lang]/icu-example/page.tsx:59
 msgid "{count, plural, =0 {No items} =1 {# item} other {# items}}"
 msgstr "{count, plural, =0 {No items} =1 {# item} other {# items}}"
@@ -34,9 +29,17 @@ msgstr "{rank, selectordinal, =0 {No rank} one {#st} two {#nd} few {#rd} other {
 msgid "Across different cultures, things like count of objects, numbers (i.e. money), gender, and dates can cause a sentence structure to change in a unique way to that language."
 msgstr "Across different cultures, things like count of objects, numbers (i.e. money), gender, and dates can cause a sentence structure to change in a unique way to that language."
 
+#: app/[lang]/page.tsx:24
+msgid "Action Example"
+msgstr "Action Example"
+
 #: app/[lang]/icu-example/page.tsx:48
 msgid "Additionally, you may have a dynamic value used in your localization, which would need to be handled differently based on different languages' grammar, etc."
 msgstr "Additionally, you may have a dynamic value used in your localization, which would need to be handled differently based on different languages' grammar, etc."
+
+#: app/[lang]/page.tsx:28
+msgid "API Example"
+msgstr "API Example"
 
 #: app/[lang]/page.tsx:16
 msgid "Client Example"
@@ -50,10 +53,6 @@ msgstr "Client rendered"
 msgid "Client side translated title"
 msgstr "Client side translated title"
 
-#: app/[lang]/icu-example/page.tsx:50
-#~ msgid "Count Examples"
-#~ msgstr "Count Examples"
-
 #: app/[lang]/icu-example/page.tsx:121
 msgid "female"
 msgstr "female"
@@ -63,8 +62,8 @@ msgid "Home Page"
 msgstr "Home Page"
 
 #: app/[lang]/page.tsx:20
-msgid "ICU Examples"
-msgstr "ICU Examples"
+msgid "ICU Example"
+msgstr "ICU Example"
 
 #: app/[lang]/client-example/page.tsx:16
 msgid "Lingui + Next.js RSC example"
@@ -72,10 +71,14 @@ msgstr "Lingui + Next.js RSC example"
 
 #. main heading of page
 #. js-lingui-explicit-id
-#: components/ServerExamplePage.tsx:14
+#: components/ServerExamplePage.tsx:12
 msgctxt "heading"
 msgid "server.description"
 msgstr "Lingui + Next.js RSC example"
+
+#: app/[lang]/action-example/page.tsx:18
+msgid "Load Message"
+msgstr "Load Message"
 
 #: app/[lang]/icu-example/page.tsx:114
 msgid "male"
@@ -89,11 +92,11 @@ msgstr "other"
 msgid "Server Example"
 msgstr "Server Example"
 
-#: components/ServerExamplePage.tsx:26
+#: components/ServerExamplePage.tsx:24
 msgid "Server rendered"
 msgstr "Server rendered"
 
-#: components/ServerExamplePage.tsx:10
+#: components/ServerExamplePage.tsx:8
 msgid "Server side translated title"
 msgstr "Server side translated title"
 
@@ -105,13 +108,15 @@ msgstr "The ICU <0>(International Components for Unicode)</0> format is a way of
 msgid "The ICU Format"
 msgstr "The ICU Format"
 
-#: app/[lang]/client-example/page.tsx:24
-#~ msgid "this is an example translation test text"
-#~ msgstr "this is an example translation test text"
+#. js-lingui-explicit-id
+#: app/api/test/route.ts:14
+msgid "api.hello"
+msgstr "The messages come from API has been loaded successfully"
 
-#: app/[lang]/client-example/page.tsx:26
-#~ msgid "this is an example translation test text22"
-#~ msgstr "this is an example translation test text22"
+#. js-lingui-explicit-id
+#: lib/action.ts:14
+msgid "action.hello"
+msgstr "Server action messages have been loaded successfully"
 
 #: app/[lang]/icu-example/page.tsx:172
 msgid "Translations can be used with dynamic values, as shown in the examples below:"
@@ -120,10 +125,6 @@ msgstr "Translations can be used with dynamic values, as shown in the examples b
 #: app/[lang]/icu-example/page.tsx:187
 msgid "You've ranked as {rank}"
 msgstr "You've ranked as {rank}"
-
-#: app/[lang]/icu-example/page.tsx:154
-#~ msgid "You've selected the gender {gender}"
-#~ msgstr "You've selected the gender {gender}"
 
 #: app/[lang]/icu-example/page.tsx:181
 msgid "You've selected the value {count}"
