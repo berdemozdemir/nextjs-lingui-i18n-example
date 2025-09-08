@@ -1,4 +1,4 @@
-import { initLingui } from '@/lib/initLingui';
+import { getI18nInstance } from '@/lib/i18n';
 import { setI18n } from '@lingui/react/server';
 import { cookies, headers } from 'next/headers';
 import { ReactNode } from 'react';
@@ -16,9 +16,9 @@ export const TranslatedPage = async ({ children }: TranslatedPageProps) => {
 
   const lang = headerLang || cookieLang || 'en';
 
-  const i18nInstance = initLingui(lang);
+  const i18n = getI18nInstance(lang);
 
-  setI18n(i18nInstance);
+  setI18n(i18n);
 
   return <>{children}</>;
 };
