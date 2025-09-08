@@ -3,10 +3,8 @@ import '../globals.css';
 import { LinguiClientProvider } from '@/components/LinguiClientProvider';
 import { allMessages } from '@/lib/i18n';
 import { LanguageSelector } from '@/components/LangSelector';
-import { setI18n } from '@lingui/react/server';
 import { ReactNode, use } from 'react';
 import { AvailableLocale } from '@/lib/common';
-import { initLingui } from '@/lib/initLingui';
 
 export const metadata: Metadata = {
   title: 'Lingui POC',
@@ -22,10 +20,6 @@ type Props = {
 
 export default function RootLayout({ children, params }: Props) {
   const { lang } = use(params);
-
-  const i18nInstance = initLingui(lang);
-
-  setI18n(i18nInstance);
 
   return (
     <html lang={lang}>
